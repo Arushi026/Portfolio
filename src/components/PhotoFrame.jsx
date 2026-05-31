@@ -99,7 +99,9 @@ export default function PhotoFrame() {
         width:"230px", boxSizing:"border-box",
       }}>
         <div style={{ color:"#fff", fontSize:"15px", fontWeight:700 }}>Arushi Singh</div>
-        <div style={{ color:"#4ade80", fontSize:"10px", letterSpacing:"0.1em", marginTop:"3px" }}>Full Stack Developer · MERN & AI</div>
+        <div style={{ color:"#4ade80", fontSize:"10px", letterSpacing:"0.1em", marginTop:"3px" }}>
+          Software Engineer 
+          </div>
       </div>
     </div>
   );

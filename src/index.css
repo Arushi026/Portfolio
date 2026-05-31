@@ -1,155 +1,7 @@
-/*  @import "tailwindcss";
-
-body{
-  margin:0;
-  padding:0;
-  background:black;
-  overflow-x:hidden;
-  font-family:sans-serif;
-}
-@keyframes scanline {
-  0%   { top: -10%; }
-  100% { top: 110%; }
-} 
-
-
-@import "tailwindcss";
-
-* {
-  scroll-behavior: smooth;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  background: #050816;
-  overflow-x: hidden;
-  font-family: 'Inter', 'Segoe UI', sans-serif;
-}
-
-/* Custom scrollbar */
-/* ::-webkit-scrollbar {
-  width: 4px;
-}
-::-webkit-scrollbar-track {
-  background: #050816;
-}
-::-webkit-scrollbar-thumb {
-  background: #00e5ff40;
-  border-radius: 4px;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: #00e5ff80;
-}
-
-/* Scanline animation for photo frame */
-/* @keyframes scanline {
-  0%   { top: -10%; }
-  100% { top: 110%; }
-}  */ 
-
-
-
-
-
-
-/* 
-
-
-@import "tailwindcss";
-
-* { scroll-behavior: smooth; box-sizing: border-box; }
-
-body {
-  margin: 0;
-  padding: 0;
-  background: #0a0a0a;
-  overflow-x: hidden;
-  font-family: 'Inter', 'Segoe UI', sans-serif;
-}
-
-::-webkit-scrollbar { width: 4px; }
-::-webkit-scrollbar-track { background: #0a0a0a; }
-::-webkit-scrollbar-thumb { background: rgba(105,255,71,0.3); border-radius: 4px; }
-::-webkit-scrollbar-thumb:hover { background: rgba(105,255,71,0.6); }
-
-@keyframes scanline {
-  0%   { top: -10%; }
-  100% { top: 110%; }
-}
-
-@keyframes textShimmer {
-  0%   { background-position: -200% center; }
-  100% { background-position: 200% center; }
-} */
-
-
-/* @import "tailwindcss";
-
-*, *::before, *::after {
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-  scroll-snap-type: none;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  background: #000;
-  overflow-x: hidden;
-  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #fff;
-}
-
-::selection {
-  background: rgba(105, 255, 71, 0.25);
-  color: #fff;
-}
-
-::-webkit-scrollbar {
-  width: 4px;
-}
-::-webkit-scrollbar-track {
-  background: #000;
-}
-::-webkit-scrollbar-thumb {
-  background: rgba(105, 255, 71, 0.3);
-  border-radius: 2px;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: #69ff47;
-}
-
-@keyframes scanline {
-  0%   { top: -5%; }
-  100% { top: 105%; }
-}
-
-@keyframes pulse {
-  0%, 100% { opacity: 1; }
-  50%       { opacity: 0.3; }
-}
-
-@keyframes float {
-  0%, 100% { transform: translateY(0px); }
-  50%       { transform: translateY(-8px); }
-} */
-
-
-
-
-
 @import "tailwindcss";
 
 *, *::before, *::after { box-sizing: border-box; }
-
 html { scroll-behavior: smooth; }
-
 body {
   margin: 0; padding: 0;
   background: #050f05;
@@ -158,9 +10,7 @@ body {
   -webkit-font-smoothing: antialiased;
   color: #fff;
 }
-
 ::selection { background: rgba(74,222,128,0.25); color: #fff; }
-
 ::-webkit-scrollbar { width: 4px; }
 ::-webkit-scrollbar-track { background: #050f05; }
 ::-webkit-scrollbar-thumb { background: rgba(74,222,128,0.35); border-radius: 2px; }
@@ -169,3 +19,25 @@ body {
 @keyframes scanline { 0%{top:-2%;} 100%{top:102%;} }
 @keyframes pulse { 0%,100%{opacity:1;} 50%{opacity:0.3;} }
 @keyframes float { 0%,100%{transform:translateY(0);} 50%{transform:translateY(-8px);} }
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .hero-row { flex-direction: column !important; align-items: center !important; text-align: center !important; }
+  .hero-left { align-items: center !important; }
+  .hero-pill { margin: 0 auto 20px !important; }
+  .hero-stats { justify-content: center !important; max-width: 100% !important; }
+  .hero-buttons { justify-content: center !important; }
+  .about-grid { grid-template-columns: 1fr !important; gap: 40px !important; }
+  .projects-grid { grid-template-columns: 1fr !important; }
+  .skills-grid { grid-template-columns: 1fr !important; gap: 40px !important; }
+  .contact-grid { grid-template-columns: 1fr !important; gap: 40px !important; }
+  .navbar-links { display: none !important; }
+  .navbar-mobile { display: flex !important; }
+  .photo-frame { width: 180px !important; }
+  .photo-img-box { width: 180px !important; height: 220px !important; }
+}
+
+@media (max-width: 480px) {
+  .photo-frame { width: 160px !important; }
+  .photo-img-box { width: 160px !important; height: 200px !important; }
+}

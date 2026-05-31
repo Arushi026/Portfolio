@@ -237,8 +237,3 @@ export default function App() {
   );
 }
 
-
-
-// git add .
-// git commit -m "remove deprecated packages"
-// git push
