@@ -24,7 +24,7 @@ export default function About() {
     {icon:"🎓",label:"Education",value:"B.Tech in Computer Science & Engineering — Lucknow University  • (2021 – 2025)"},
     {icon:"💼",label:"Internship",value:"Full Stack Developer Intern at Analyze InfoTech"},
     {icon:"📍",label:"Location",value:"India"},
-    {icon:"🚀",label:"Focus",value:"MERN Stack • Java • AI Applications • Full Stack DevelopmentI"},
+    {icon:"🚀",label:"Focus",value:"MERN Stack • Java • AI Applications • Full Stack Development"},
   ];
 
   return (
